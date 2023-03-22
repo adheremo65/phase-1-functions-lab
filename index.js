@@ -22,8 +22,9 @@ function calculatesFarePrice(d1,d2) {
         return 0;}
     else if ((distanceTravelledInFeet(d1,d2)>400)&&(distanceTravelledInFeet(d1,d2)<=2000)) {
         return (distanceTravelledInFeet(d1,d2)-400)*0.02;}
-        else if ((distanceTravelledInFeet(d1,d2)>2000)&&(distanceTravelledInFeet(d1,d2)<2500)) {
-            return (distanceTravelledInFeet(d1,d2)-400)*0.02
+        else if ((distanceTravelledInFeet(d1,d2)>2000)&&(distanceTravelledInFeet(d1,d2)<=2500)) {
+            // return (1600 *0.02) +  (distanceTravelledInFeet(d1,d2)-2000)*25
+            return 25;
         }
     else if(distanceTravelledInFeet(d1,d2)>2500){
         return "cannot travel that far"
